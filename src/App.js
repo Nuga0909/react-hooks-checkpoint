@@ -9,3 +9,7 @@ function App() {
 }
 
 export default App;
+
+// MovieCard
+// MovieList
+// Filter ( title, rate)
