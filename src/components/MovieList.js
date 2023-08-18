@@ -31,19 +31,9 @@ const MovieList = () => {
 
     return (
         <>
-            {/* <div className='filter-cont'>
-                <InputGroup className="mb-3" onSubmit={(e)=>handleAdd(e)}>
-                    <InputGroup.Text >Add a new movie</InputGroup.Text>
-                    <Form.Control aria-label="Title" placeholder='Title' />
-                    <Form.Control aria-label="Description" placeholder='Description' />
-                    <Form.Control aria-label="PosterURL" placeholder='PosterURL' />
-                    <Form.Control aria-label="Rating" placeholder='Rating' />
-                </InputGroup>
-            </div > */}
-
             <form onSubmit={handleSubmit} className="my-form">
                 <div className="input-group">
-                    <label htmlFor="title">title</label>
+                    <label htmlFor="title">Title</label>
                     <input
                         id="title"
                         value={newMovie.title || ""}

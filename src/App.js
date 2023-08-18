@@ -1,4 +1,5 @@
 import './App.css';
+import SampleMovies from './SampleMovies';
 // import AddMovie from './components/AddMovie';
 import Filter from './components/Filter';
 import MovieList from './components/MovieList';
@@ -9,6 +10,7 @@ function App() {
       {/* <AddMovie /> */}
       <Filter />
       <MovieList />
+      <SampleMovies  />
     </>
   );
 }

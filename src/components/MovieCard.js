@@ -24,7 +24,6 @@ const MovieCard = ({ title, description, posterUrl, rating, del }) => {
                 </ListGroup>
                 <Card.Body>
                     <Card.Link href="#" onClick={del}>Delete Movie</Card.Link>
-                    <Card.Link href="#">Another Link</Card.Link>
                 </Card.Body>
             </Card>
 
