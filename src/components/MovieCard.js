@@ -2,9 +2,13 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// const handleDelete = (key) => {
+// moviesObj.splice(key, 1)
+// }
+
 // title, description, posterURL, rating
 
-const MovieCard = ({ title, description, posterUrl, rating }) => {
+const MovieCard = ({ title, description, posterUrl, rating, del }) => {
     return (
         <>
             <Card style={{ width: '18rem' }}>
@@ -19,7 +23,7 @@ const MovieCard = ({ title, description, posterUrl, rating }) => {
                     <ListGroup.Item>{rating}</ListGroup.Item>
                 </ListGroup>
                 <Card.Body>
-                    <Card.Link href="#">Card Link</Card.Link>
+                    <Card.Link href="#" onClick={del}>Delete Movie</Card.Link>
                     <Card.Link href="#">Another Link</Card.Link>
                 </Card.Body>
             </Card>

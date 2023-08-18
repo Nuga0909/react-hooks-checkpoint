@@ -1,6 +1,6 @@
 // title, description, posterURL, rating
 
-const moviesObj = [
+let moviesObj = [
     {
         title: "GRAN TURISMO",
         description: "Based on the unbelievable, inspiring true story of a team of underdogs - a struggling, working-class gamer, a failed former race car driver, and an idealistic motorsport exec ...",
