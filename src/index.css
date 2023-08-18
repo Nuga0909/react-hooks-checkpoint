@@ -14,5 +14,10 @@ code {
 
 .cont {
   display: flex;
-  gap: 30px;
+  justify-content: space-around;
+}
+
+.filter-cont {
+  margin: 30px;
+  margin-bottom: 50px;
 }
