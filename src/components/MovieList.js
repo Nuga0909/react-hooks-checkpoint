@@ -41,7 +41,7 @@ const MovieList = () => {
                 </InputGroup>
             </div > */}
 
-            <form onSubmit={handleSubmit} className='cont'>
+            <form onSubmit={handleSubmit} className="my-form">
                 <div className="input-group">
                     <label htmlFor="title">title</label>
                     <input
