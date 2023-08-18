@@ -5,9 +5,10 @@ import React, { useState } from "react";
 const MovieList = () => {
     const [movies, setMovies] = useState(moviesObj);
 
-    // const handleDelete = (key) => {
-    //     setMovies(movies.filter((element, n) => n !== key))
-    // }
+    const handleDelete = (key) => {
+        const newMovies = movies.filter((_, n) => n !== key);
+        setMovies(newMovies);
+    }
 
 
     return (
@@ -18,7 +19,7 @@ const MovieList = () => {
                     description={movie.description}
                     posterUrl={movie.posterUrl}
                     rating={movie.rating}
-                    // del={handleDelete(key)}
+                    del={() => handleDelete(key)}
                 />
             ))}
         </div>
