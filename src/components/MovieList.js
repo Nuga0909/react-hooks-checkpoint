@@ -1,8 +1,6 @@
-// import InputGroup from 'react-bootstrap/InputGroup';
 import MovieCard from "./MovieCard";
 import moviesObj from "../moviesObj";
 import React, { useState } from "react";
-// import Form from 'react-bootstrap/Form';
 
 const MovieList = () => {
     const [movies, setMovies] = useState(moviesObj);
@@ -15,18 +13,11 @@ const MovieList = () => {
 
     const handleChange = (e) => {
         setNewMovie({ ...newMovie, [e.target.id]: e.target.value });
-        // setMovies(...movies, ...newMovie);
-        // setNewMovie(movies.push(title = { e.target.movie.title }
-        //     description = { movie.description }
-        //     posterUrl = { movie.posterUrl }
-        //     rating = { movie.rating }))
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
         setMovies([...movies, newMovie]);
-
-        console.log(newMovie);
     };
 
     return (
