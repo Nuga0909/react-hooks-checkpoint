@@ -21,9 +21,16 @@ const MovieList = () => {
         setMovies([...movies, newMovie]);
     };
 
+    function handleFilter(search) {
+        let filteredMovie = movies.filter((value) =>
+            value.title.toLowerCase().includes(search.toLowerCase())
+        );
+        setMovies(filteredMovie);
+    }
+
     return (
         <>
-            <Filter />
+            <Filter handleFilter={handleFilter} />
 
             <form onSubmit={handleSubmit} className="my-form">
                 <div className="input-group">
