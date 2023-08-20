@@ -1,6 +1,7 @@
 import MovieCard from "./MovieCard";
 import moviesObj from "../moviesObj";
 import React, { useState } from "react";
+import Filter from "./Filter";
 
 const MovieList = () => {
     const [movies, setMovies] = useState(moviesObj);
@@ -22,6 +23,8 @@ const MovieList = () => {
 
     return (
         <>
+            <Filter />
+
             <form onSubmit={handleSubmit} className="my-form">
                 <div className="input-group">
                     <label htmlFor="title">Title</label>
