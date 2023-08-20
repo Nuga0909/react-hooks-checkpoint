@@ -29,7 +29,7 @@ const Filter = ({ handleFilter }) => {
             <input
                 className="w-50"
                 type="text"
-                placeholder="Search for a movie class"
+                placeholder="Search for a movie"
                 style={{ height: "50px", fontSize: "20px", padding: "10px 20px" }}
                 onChange={handleChange}
                 value={searchInput}
@@ -38,7 +38,6 @@ const Filter = ({ handleFilter }) => {
             <Button variant="primary" onClick={handleSearch}>
                 Search
             </Button>{" "}
-            <Button variant="success">Add Movie</Button>{" "}
         </div>
     )
 };
