@@ -3,7 +3,6 @@ import MovieCard from "./MovieCard";
 import moviesObj from "../moviesObj";
 import React, { useState } from "react";
 import Filter from "./Filter";
-import TrailerPage from "./TrailerPage";
 
 const MovieList = () => {
   const [movies, setMovies] = useState(moviesObj);
@@ -38,7 +37,11 @@ const MovieList = () => {
 
   const navigateToTrailerPage = (key) => {
     // 👇️ navigate to /trailerPgae
-    <TrailerPage description={movies.key.description} />;
+    // <TrailerPage description={movies.key.description} />;
+    // <Routes>
+    //     <Route path='/trailer' element={<TrailerPage description={movies.description} />}>
+    //     </Route>
+    //   </Routes>
     navigate("/trailer");
   };
 
