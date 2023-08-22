@@ -8,11 +8,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // title, description, posterURL, rating
 
-const MovieCard = ({ title, description, posterUrl, rating, del }) => {
+const MovieCard = ({ title, description, posterUrl, rating, del, trailer}) => {
     return (
         <>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={posterUrl} className='card-img'/>
+                <Card.Img variant="top" src={posterUrl} className='card-img' onClick={trailer}/>
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>

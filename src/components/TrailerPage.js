@@ -1,9 +1,14 @@
 import React from 'react'
 
-function TrailerPage() {
-  return (
-    <div>TrailerPage</div>
-  )
+function TrailerPage({ description }) {
+    return (
+        <div>
+            <div>
+                Trailer Page
+            </div>
+            {description}
+        </div>
+    )
 }
 
 export default TrailerPage
