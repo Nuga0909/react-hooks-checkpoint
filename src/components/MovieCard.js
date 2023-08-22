@@ -12,7 +12,7 @@ const MovieCard = ({ title, description, posterUrl, rating, del }) => {
     return (
         <>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={posterUrl} />
+                <Card.Img variant="top" src={posterUrl} className='card-img'/>
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>
