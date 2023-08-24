@@ -1,9 +1,9 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import SampleMovies from './SampleMovies';
+// import SampleMovies from './SampleMovies';
 import MovieList from './components/MovieList';
 import TrailerPage from './components/TrailerPage';
-import moviesObj from './moviesObj';
+// import moviesObj from './moviesObj';
 
 function App() {
   return (
@@ -11,10 +11,11 @@ function App() {
       <Routes>
         <Route path='/' element={<MovieList />}>
         </Route>
-        <Route path='/trailer' element={<TrailerPage description={moviesObj.description}/>}>
-        </Route>
+        <Route path='/trailer/:movieId' element={<TrailerPage />} />
+        {/* <Route path='/trailer' element={<TrailerPage description={moviesObj.description}/>}> */}
+        {/* </Route> */}
       </Routes>
-      <SampleMovies />
+      {/* <SampleMovies /> */}
     </>
   );
 }

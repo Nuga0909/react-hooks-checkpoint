@@ -36,13 +36,8 @@ const MovieList = () => {
   const navigate = useNavigate();
 
   const navigateToTrailerPage = (key) => {
-    // <TrailerPage description={movies.key.description} />;
-    // <Routes>
-    //     <Route path='/trailer' element={<TrailerPage description={movies.description} />}>
-    //     </Route>
-    //   </Routes>
-    navigate("/trailer");
-  };
+    navigate(`/trailer/${key}`);
+};
 
   return (
     <>
