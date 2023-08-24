@@ -8,7 +8,7 @@ function TrailerPage() {
 
     return (
         <div>
-            <h2>Trailer Page</h2>
+            <h2>{movie.title}</h2>
             <p>{movie && movie.description}</p>
             <a href={movie && movie.trailerLink}>trailer</a>
             <br />
